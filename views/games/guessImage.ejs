@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="../css/main.css">
+
+    <title>Explorer Game</title>
+</head>
+<body>
+    <% scores.forEach(score =>{ %>
+        <div class="hi-one">
+            <div class="hi-name"> <%= score.name%> <span id="hi-score"><%= score.hiscore%> </span></div>
+        </div>
+  <%  }) %>
+    <canvas></canvas>
+    <img src="../images/explorer.png" id="explorer" ></img>
+    <img src="https://guessimage.s3.eu-north-1.amazonaws.com/square_tile.png" id="square_tile" ></img>
+    <img src="https://guessimage.s3.eu-north-1.amazonaws.com/card_star.png" id="star"></img>
+    <img src="https://guessimage.s3.eu-north-1.amazonaws.com/card_oval.png" id="oval"></img>
+    <img src="https://guessimage.s3.eu-north-1.amazonaws.com/cardimages.png" id="cards"></img>
+    <img src="https://guessimage.s3.eu-north-1.amazonaws.com/background.png" alt="bg" id="scene1">
+    <img src="https://guessimage.s3.eu-north-1.amazonaws.com/background_one.png" id="scene"></img>
+    <img src="https://guessimage.s3.eu-north-1.amazonaws.com/check_btn.png" id="gui"></img>
+    
+    <script type="module"  src="../js/main.js"></script>
+</body>
+</html>
+
