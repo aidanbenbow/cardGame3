@@ -4,7 +4,7 @@ import {router as indexRouter} from './routes/index.js'
 import {router as gamesRouter} from './routes/games.js'
 import {connectDB} from './config/db.js'
 
-connectDB()
+//connectDB()
 
 const __dirname = import.meta.dirname;
 
